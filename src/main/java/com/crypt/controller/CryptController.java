@@ -70,7 +70,7 @@ public class CryptController {
         Double oldPrice = (Double) prices.get(0).get("price_usd");
         Double actualPrice = (Double) prices.get(0).get("price_usd");
 
-        if (actualPrice > (oldPrice * 1.1)) {
+        if (actualPrice > (oldPrice * 1.01)) {
             notifyLog((actualPrice - oldPrice) / oldPrice * 100, actualPrice);
         }
     }
